@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher machine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center">
+        <div class="card">
+
+            <div class="card-body">
+                <h3 class="card-title text-center text-light">Password Generator</h3>
+                <div class="fields mt-4">
+                    <input type="text" id="input" class="d-block mb-3 w-100 p-2 " placeholder="Enter plain text here"
+                        required>
+                    <textarea rows="6" id="output" class="d-block mb-3 w-100 p-1"
+                        placeholder="Encrypted Password will come here"></textarea>
+                    <div class="copy d-flex justify-content-end w-100">
+                        <a class="btn btn-primary" href="#" id="copy">copy</a>
+                    </div>
+                </div>
+
+
+                <div class="buttons mt-3">
+                    <a class="btn btn-success d-block mb-2" href="#" id="encrypt">Generate (Encrypt)</a>
+                    <a class="btn btn-danger d-block mb-2" href="#" id="decrypt">Decrypt (Generate original text)</a>
+                    <a class="btn btn-dark d-block mb-2" href="#" id="clear"> Clear Text</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"
+        integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A=="
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
